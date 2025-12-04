@@ -1,0 +1,29 @@
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.pdb
+*.log
+
+# Python virtual environments
+.env
+.venv/
+venv/
+ENV/
+myenv/
+
+# Jupyter
+.ipynb_checkpoints
+
+# macOS
+.DS_Store
+
+# Large datasets
+dataset/
+dataset_eye/
+data_crops/
+checkpoints/
+models/
+
+# Audio files
+*.mp3
