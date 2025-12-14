@@ -14,7 +14,7 @@ EYE_CKPT = CHECKPOINT_DIR / "eye_best.pt"
 YAWN_CKPT = CHECKPOINT_DIR / "yawn_best.pt"
 
 FACE_WEIGHTS = str(ROOT / "models" / "face_yolov8n.pt")
-PHONE_DETECT = str((ROOT / "models" / "model_cong_train.pt"))
+PHONE_DETECT = str((ROOT / "models" / "phone_yolov8n.pt"))
 
 EYE_CLOSED_SEC = 2.5
 YAWN_SEC = 2.5
@@ -32,4 +32,3 @@ ALARM_FILES = {
     "phone": ROOT / "su_dung_dt.mp3",
     "not_focus": ROOT / "khong_tap_trung.mp3",
 }
-

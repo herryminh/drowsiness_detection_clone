@@ -9,7 +9,7 @@ LEFT_EYE    = [33, 133, 160, 159, 158, 144, 153, 154, 155, 173]
 RIGHT_EYE   = [263, 362, 387, 386, 385, 373, 380, 381, 382, 390]
 
 class FaceLandmarker:
-    def __init__(self, static=False, max_faces=1):
+    def __init__(self, static=False, max_faces=1): #hàm khởi tạo khuôn mặt 
         self.mesh = mp_face_mesh.FaceMesh(
             static_image_mode=static,
             max_num_faces=max_faces,
@@ -18,7 +18,7 @@ class FaceLandmarker:
             min_tracking_confidence=0.5,
         )
     def __del__(self):
-        try: self.mesh.close()
+        try: self.mesh.close() # thoát khỏi hàm khởi tạo khuôn mặt
         except Exception: pass
     def _landmarks_to_np(self, face_landmarks, w, h):
         return np.array([(int(lm.x*w), int(lm.y*h)) for lm in face_landmarks.landmark])
