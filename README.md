@@ -2,8 +2,7 @@
 ## Sinh viên nhóm
 22h1320012	Tôn Thất Bảo
 22h1320023	Hồ Đăng Nguyên
-22h1320034	Phạm Đăng Trình
-	        Nguyễn Đình	Phương
+22h1320004  Hoàng Trần Minh
 
 Giải pháp phát hiện buồn ngủ theo thời gian thực từ camera:
 - **YOLO** phát hiện **khuôn mặt** (hỗ trợ hiển thị & fallback).
